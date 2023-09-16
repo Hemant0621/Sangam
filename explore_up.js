@@ -118,7 +118,7 @@ function openbook(pre,nex,boo) {
         nex.style.transform = "translateX(170px)";
     }
     else{
-        pre.style.transform = "translateX(-100px)";
+        pre.style.transform = "translateX(-10px)";
         nex.style.transform = "translateX(100px)";
     }
 }
