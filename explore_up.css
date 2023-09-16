@@ -4,6 +4,9 @@
 } */
 body{
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Samarkan';
 }
 div {
   display: inline-block;
@@ -22,22 +25,31 @@ p{
   color: white;
 }
 .svg-container {
-  height: 200px;
+  height: 900px;
   width: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* position: relative; */
 }
+
+
 .svg-container svg {
   /* margin-left: 25%; */
-  /* height: 80%; */
-  margin-right: 5%;
-  width: auto;
-  overflow: hidden;
+  /* height: 80%;
+  margin-right: 5%; */
+  /* width: auto; */
+  /* overflow: hidden; */
+  width: 100%;
+  justify-self: center;
 }
 
 @media only screen and (min-width: 767px) and (max-width: 991px) {
   .svg-container svg {
-    width: 100%;
+    width: 80%;
     margin-left: 0;
+    float: right;
   }
 }
 .path{
@@ -49,10 +61,11 @@ p{
 }
 
 .info-box {
-  /* margin-left: 10px; */
+  margin: 10px;
   color: #ccc;
   /* position: absolute; */
   padding-right: 3%;
+  text-align: center;
   /* margin-left: 10%; */
   /* margin-right: 10%; */
 }
@@ -97,17 +110,14 @@ path:hover::before {
 @media (min-width: 768px) and (max-width: 991px) {
   .svg-container svg {
     width: 70%;
-    margin-left: 15%;
+    /* margin-left: 15%; */
   }
 }
 
 @media (min-width: 992px) {
   .svg-container svg {
     width: 50%;
-    margin-left: 25%;
-  }
-  .info-box{
-    position: absolute;
+    /* margin-left: 25%; */
   }
 }
 
